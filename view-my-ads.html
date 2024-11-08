@@ -9,7 +9,54 @@ body {
 </style>
 </head>
 <body>
+    <!-- Username1 -->
     <p style="color:yellow;font-family:arial">Username1</p>
+    <button id="subscribe1" onclick="style.display = 'none'">DL1</button>
+    <button id="subscribe2" onclick="style.display = 'none'">DL2</button>
+    <button id="subscribe3" onclick="style.display = 'none'">DL3</button>
+    <button id="subscribe3" onclick="style.display = 'none'">DL4</button>
+    <script>
+        var button = document.getElementById('subscribe1');
+        button.addEventListener('click', function()
+        {
+            window.open('http://www.youtube.com/', '_blank');
+            setTimeout(function() {
+                window.parent.postMessage('button was clicked', '*'); //send message to Wix page
+            }, 1000); //after one seconds
+        });
+    </script>
+    <script>
+        var button = document.getElementById('subscribe2');
+        button.addEventListener('click', function()
+        {
+            window.open('http://www.youtube.com/', '_blank');
+            setTimeout(function() {
+                window.parent.postMessage('button was clicked', '*'); //send message to Wix page
+            }, 1000); //after one seconds
+        });
+    </script>
+    <script>
+        var button = document.getElementById('subscribe3');
+        button.addEventListener('click', function()
+        {
+            window.open('http://www.youtube.com/', '_blank');
+            setTimeout(function() {
+                window.parent.postMessage('button was clicked', '*'); //send message to Wix page
+            }, 1000); //after one seconds
+        });
+    </script>
+    <script>
+        var button = document.getElementById('subscribe4');
+        button.addEventListener('click', function()
+        {
+            window.open('http://www.youtube.com/', '_blank');
+            setTimeout(function() {
+                window.parent.postMessage('button was clicked', '*'); //send message to Wix page
+            }, 1000); //after one seconds
+        });
+    </script>
+<!-- Username2 -->
+    <p style="color:yellow;font-family:arial">Username2</p>
     <button id="subscribe1" onclick="style.display = 'none'">DL1</button>
     <button id="subscribe2" onclick="style.display = 'none'">DL2</button>
     <button id="subscribe3" onclick="style.display = 'none'">DL3</button>
