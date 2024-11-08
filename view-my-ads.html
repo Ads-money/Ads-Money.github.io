@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:700&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <p>Person1</p>
+    <button id="subscribe1" onclick="style.display = 'none'">DL1</button>
+    <button id="subscribe2" onclick="style.display = 'none'">DL2</button>
+    <button id="subscribe3" onclick="style.display = 'none'">DL3</button>
+    <button id="subscribe3" onclick="style.display = 'none'">DL4</button>
+    <script>
+        var button = document.getElementById('subscribe1');
+        button.addEventListener('click', function()
+        {
+            window.open('http://www.youtube.com/', '_blank');
+            setTimeout(function() {
+                window.parent.postMessage('button was clicked', '*'); //send message to Wix page
+            }, 1000); //after one seconds
+        });
+    </script>
+    <script>
+        var button = document.getElementById('subscribe2');
+        button.addEventListener('click', function()
+        {
+            window.open('http://www.youtube.com/', '_blank');
+            setTimeout(function() {
+                window.parent.postMessage('button was clicked', '*'); //send message to Wix page
+            }, 1000); //after one seconds
+        });
+    </script>
+    <script>
+        var button = document.getElementById('subscribe3');
+        button.addEventListener('click', function()
+        {
+            window.open('http://www.youtube.com/', '_blank');
+            setTimeout(function() {
+                window.parent.postMessage('button was clicked', '*'); //send message to Wix page
+            }, 1000); //after one seconds
+        });
+    </script>
+    <script>
+        var button = document.getElementById('subscribe4');
+        button.addEventListener('click', function()
+        {
+            window.open('http://www.youtube.com/', '_blank');
+            setTimeout(function() {
+                window.parent.postMessage('button was clicked', '*'); //send message to Wix page
+            }, 1000); //after one seconds
+        });
+    </script>
+</body>
+
+</html>
